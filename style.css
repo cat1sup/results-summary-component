@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+--light-red: hsl(0, 100%, 67%);
+--orange-yellow: hsl(39, 100%, 56%);
+--green-teal: hsl(166, 100%, 37%);
+--cobalt-blue: hsl(234, 85%, 45%);
+
+/* background */
+--light-slate-blue: hsl(252, 100%, 67%);
+--light-royal-blue: hsl(241, 81%, 54%);
+
+/* circle */
+--violet-blue : hsla(256, 72%, 46%, 1);
+--persian-blue: hsla(241, 72%, 46%, 0);
+
+--pale-blue: hsl(221, 100%, 96%);
+--light-lavender: hsl(241, 100%, 89%);
+--dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Hanken Grotesk', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    
+
+}
+
+.box {
+    width: 650px;
+    height: 450px;
+    display: flex;
+    box-shadow: 0px 0px 30px 1px rgba(6, 52, 255, 0.116);
+    border-radius: 30px;
+}
+
+.box-left {
+    background-image: linear-gradient(var(--light-slate-blue),var(--light-royal-blue));
+    display: flex;
+    flex: 50%;
+    border-radius: 30px;  
+    padding: 20px 30px 30px 30px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    color: white;
+
+}
+
+.box-left-result {
+    font-size: 21px;
+    margin-bottom: 20px;
+}
+
+.box-left-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 90px;
+    padding: 30px;
+    height: 170px;
+    width: 170px;
+    background-image: linear-gradient(var(--violet-blue),var(--persian-blue));
+}
+
+.box-left-circle-result {
+    font-size: 60px;
+    font-weight: 700;
+
+}
+
+.box-left-circle-max-result {
+    color: var(--light-lavender);
+}
+
+.box-left-great {
+    font-size: 28px;
+}
+
+.box-left-text {
+    font-size: 15px;
+    text-align: center;
+    color: var(--light-lavender);
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+/* -------------------------------------------------------- */
+
+
+.box-right {
+    display: flex;
+    flex: 50%;
+    border-radius: 0px 30px 30px 0px;  
+    padding: 30px;
+    justify-content:left;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.box-right-summary {
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.box-right-reaction {
+    color:var(--light-red);
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: hsla(0, 100%, 67%,0.05);
+    
+}
+
+.box-right-memory {
+    color:var(--orange-yellow);
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: hsla(39, 100%, 56%,0.05);
+}
+
+.box-right-verbal {
+    color:var(--green-teal);
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: hsla(166, 100%, 37%,0.05);
+}   
+
+.box-right-visual {
+    color:var(--cobalt-blue);
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: hsla(234, 85%, 45%,0.05);
+}
+
+.box-right-your-result {
+    color:var(--dark-gray-blue);
+}
+
+.box-right-max-result {
+    color:lightslategray;
+}
+
+.box-right-continue {
+    text-align: center;
+    color: white;
+    background-color: var(--dark-gray-blue);
+    padding: 15px;
+    border-radius: 30px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.box-right-continue:hover {
+    background-color: hsl(224, 30%, 27%,0.8);
+    cursor: pointer;
+}
+
+.text {
+    display: flex;
+    flex-direction: row;
+}
+
+.score {
+    display: flex;
+    flex-direction: row;
+}
+
+.attribution {
+    font-size: 12px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-royal-blue);
+    color: white;
+    padding: 5px;
+}
+
+.attribution a {
+    color: white;
+    text-decoration:none;
+}
+
+@media only screen and (max-width: 600px) {
+    .box {
+        width: 100%;
+        flex-direction: column;
+        height: 700px;
+        width: 500px;
+    }
+}
